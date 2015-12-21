@@ -29,13 +29,7 @@ public class Ex6 {
 	}
 
 	public static void main(String[] args) {
-//		Ex6 ex6 = new Ex6();
-//		System.out.println(ex6.convert("AB", 1));
-		String uri = "/oauth2/authorize";
-	    	int index = -1;
-	    	if( (index = uri.indexOf(";")) != -1) {
-	    		uri = uri.substring(0, index);
-	    	}
-	    	System.out.println(uri);
+		Ex6 ex6 = new Ex6();
+		System.out.println(ex6.convert("ABCDEFG", 3));
 	}
 }
