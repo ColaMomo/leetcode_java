@@ -1,7 +1,5 @@
 package com.kolamomo.leetcode;
 
-import com.kolamomo.leetcode.Ex19.ListNode;
-
 public class Ex21 {
 	/**
 	 * Definition for singly-linked list.
