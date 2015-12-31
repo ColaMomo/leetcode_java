@@ -8,6 +8,42 @@ import java.util.Set;
 import java.util.Stack;
 
 public class Ex22 {
+    public List<String> generateParenthesis(int n) {
+    	char[] chArr = new char[n * 2];
+    	List<String> result= new ArrayList<String> ();
+    	doGenerateParenthesis(chArr, 0, result);
+    	return result;
+    }
+    
+    private void doGenerateParenthesis(char[] chArr, int index, List<String> list) {
+    	if(index == chArr.length) {
+    		list.add(String.valueOf(chArr));
+    	} else {
+    		int countLeft = 0;
+    		int countRight = 0;
+    		for(int i = 0; i < index; i++) {
+    			if(chArr[i] == '(') {
+    				countLeft++;
+    			} else {
+    				countRight++;
+    			}
+    		}
+    		if(countLeft <= countRight) {
+    			chArr[index] = '(';
+    			doGenerateParenthesis(chArr, index+1, list);
+    		} else if(countLeft == chArr.length / 2) {
+    			chArr[index] = ')';
+    			doGenerateParenthesis(chArr, index+1, list);
+    		} else {
+    			chArr[index] = '(';
+    			doGenerateParenthesis(chArr, index+1, list);
+    			chArr[index] = ')';
+    			doGenerateParenthesis(chArr, index+1, list);
+    		}
+    	}
+    }
+	
+	
 	//字符串全排列，再校验是否合法，超时
 	/*
     public List<String> generateParenthesis(int n) {
