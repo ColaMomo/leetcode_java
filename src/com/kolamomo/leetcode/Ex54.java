@@ -3,6 +3,21 @@ package com.kolamomo.leetcode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Spiral Matrix
+ * 
+ * <p>Given a matrix of m x n elements (m rows, n columns), return all elements of the matrix in spiral order.<br><br>
+ * For example,<br>
+ * Given the following matrix:<br>
+ * [<br>
+ *  [ 1, 2, 3 ],<br>
+ *  [ 4, 5, 6 ],<br>
+ *  [ 7, 8, 9 ]<br>
+ * ]<br>
+ * You should return [1,2,3,6,9,8,7,4,5].<br>
+ * @author Jay
+ *
+ */
 public class Ex54 {
     public List<Integer> spiralOrder(int[][] matrix) {
     	int n = matrix.length;

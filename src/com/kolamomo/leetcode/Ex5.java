@@ -1,5 +1,15 @@
 package com.kolamomo.leetcode;
 
+/**
+ * Longest Palindromic Substring (最长回文子串)
+ * 
+ * <p>Given a string S, find the longest palindromic substring in S. <br>
+ * You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.<br>
+ *
+ * @note 暴力法(n^3)，动态规划(n^2)，中心扩展(n^2)，manacher(n)
+ * @author Jay
+ *
+ */
 public class Ex5 {
 	
 	//中心扩展法，O(n^2)

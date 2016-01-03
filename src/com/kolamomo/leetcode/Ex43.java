@@ -1,5 +1,14 @@
 package com.kolamomo.leetcode;
 
+/**
+ * Multiply Strings (大整数相乘)
+ * 
+ * <p>Given two numbers represented as strings, return multiplication of the numbers as a string.<br>
+ * 
+ * Note: The numbers can be arbitrarily large and are non-negative.<br>
+ * @author Jay
+ *
+ */
 public class Ex43 {
     public String multiply(String num1, String num2) {
         int[][] temp = new int[num2.length()][num1.length() + num2.length()];

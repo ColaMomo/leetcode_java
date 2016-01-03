@@ -1,5 +1,15 @@
 package com.kolamomo.leetcode;
 
+/**
+ * Divide Two Integers (整数相除问题)
+ * 
+ * <p>Divide two integers without using multiplication, division and mod operator.<br>
+ * If it is overflow, return MAX_INT.<br>
+ * 
+ * @note 使用移位操作来计算除法
+ * @author Jay
+ *
+ */
 public class Ex29 {
     public int divide(int dividend, int divisor) {
         long result = 0;

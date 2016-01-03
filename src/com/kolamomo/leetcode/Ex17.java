@@ -5,6 +5,18 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Letter Combinations of a Phone Number
+ * 
+ * <p>Given a digit string, return all possible letter combinations that the number could represent. <br>
+ * A mapping of digit to letters (just like on the telephone buttons) is given below. <br>
+ * Input:Digit string "23" <br>
+ * Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"]. <br>
+ * 
+ * <p>笛卡尔乘积
+ * @author Jay
+ *
+ */
 public class Ex17 {
 	private static Map<Integer, Character[]> digitMap= new HashMap<Integer, Character[]>();
 	static {

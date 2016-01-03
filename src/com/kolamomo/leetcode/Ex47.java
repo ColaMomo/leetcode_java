@@ -4,6 +4,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Permutations II (字符串全排列问题，包含重复字符串)
+ * 
+ * <p>Given a collection of numbers that might contain duplicates, return all possible unique permutations.<br><br>
+ * 
+ * For example,<br>
+ * [1,1,2] have the following unique permutations:<br>
+ * [1,1,2], [1,2,1], and [2,1,1].<br>
+ * @author Jay
+ *
+ */
 public class Ex47 {
     public List<List<Integer>> permuteUnique(int[] nums) {
     	List<List<Integer>> resultList = new ArrayList<List<Integer>> ();

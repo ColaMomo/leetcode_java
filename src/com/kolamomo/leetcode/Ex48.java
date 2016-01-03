@@ -1,10 +1,12 @@
 package com.kolamomo.leetcode;
 
 /**
- * You are given an n x n 2D matrix representing an image.
- * Rotate the image by 90 degrees (clockwise).
- * Follow up:
- * Could you do this in-place?
+ * Rotate Image (矩阵旋转问题)
+ * 
+ * <p>You are given an n x n 2D matrix representing an image. <br>
+ * Rotate the image by 90 degrees (clockwise).<br>
+ * Follow up:<br>
+ * Could you do this in-place?<br>
  * @author Jay
  *
  */

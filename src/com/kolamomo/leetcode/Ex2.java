@@ -1,14 +1,18 @@
 package com.kolamomo.leetcode;
 
+/**
+ * Add Two Numbers (大整数相加)
+ * 
+ * <p>You are given two linked lists representing two non-negative numbers. <br>
+ * The digits are stored in reverse order and each of their nodes contain a single digit. <br>
+ * Add the two numbers and return it as a linked list.<br><br>
+ * Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)<br>
+ * Output: 7 -> 0 -> 8
+ * 
+ * @author Jay
+ *
+ */
 public class Ex2 {
-	/**
-	 * Definition for singly-linked list.
-	 * public class ListNode {
-	 *     int val;
-	 *     ListNode next;
-	 *     ListNode(int x) { val = x; }
-	 * }
-	 */
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     	ListNode head = null;
     	ListNode p = null;

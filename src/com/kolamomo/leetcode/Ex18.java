@@ -4,6 +4,25 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 4Sum
+ * 
+ * <p>Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? <br>
+ * Find all unique quadruplets in the array which gives the sum of target. <br> <br>
+ * 
+ * Note: <br>
+ * Elements in a quadruplet (a,b,c,d) must be in non-descending order. (ie, a ≤ b ≤ c ≤ d) <br>
+ * The solution set must not contain duplicate quadruplets. <br>
+ *     For example, given array S = {1 0 -1 0 -2 2}, and target = 0. <br>
+ *     A solution set is: <br>
+ *     (-1,  0, 0, 1) <br>
+ *     (-2, -1, 1, 2) <br>
+ *     (-2,  0, 0, 2) <br>
+ *     
+ * @note 注意排重
+ * @author Jay
+ *
+ */
 public class Ex18 {
     public List<List<Integer>> fourSum(int[] nums, int target) {
     	List<List<Integer>> result = new ArrayList<List<Integer>>();

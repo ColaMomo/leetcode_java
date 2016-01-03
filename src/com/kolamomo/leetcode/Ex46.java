@@ -4,6 +4,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Permutations (字符串全排列问题)
+ * 
+ * <p>Given a collection of distinct numbers, return all possible permutations.<br><br>
+ * 
+ * For example,<br>
+ * [1,2,3] have the following permutations:<br>
+ * [1,2,3], [1,3,2], [2,1,3], [2,3,1], [3,1,2], and [3,2,1].<br>
+ * @author Jay
+ *
+ */
 public class Ex46 {
     public List<List<Integer>> permute(int[] nums) {
     	List<List<Integer>> resultList = new ArrayList<List<Integer>> ();

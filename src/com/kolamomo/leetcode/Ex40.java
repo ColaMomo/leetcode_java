@@ -5,6 +5,27 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 
+/**
+ * Combination Sum II
+ * 
+ * <p>Given a collection of candidate numbers (C) and a target number (T), 
+ * find all unique combinations in C where the candidate numbers sums to T. <br>
+ * Each number in C may only be used once in the combination.<br><br>
+ * 
+ * Note:<br>
+ * All numbers (including target) will be positive integers.<br>
+ * Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).<br>
+ * The solution set must not contain duplicate combinations.<br><br>
+ * 
+ * For example, given candidate set 10,1,2,7,6,1,5 and target 8, <br>
+ * A solution set is: <br>
+ * [1, 7] <br>
+ * [1, 2, 5] <br>
+ * [2, 6] <br>
+ * [1, 1, 6] <br>
+ * @author Jay
+ *
+ */
 public class Ex40 {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
     	List<List<Integer>> result = new ArrayList<List<Integer>> ();

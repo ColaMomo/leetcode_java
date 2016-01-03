@@ -3,6 +3,14 @@ package com.kolamomo.leetcode;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * Integer to Roman (阿拉伯数字转罗马数字)
+ * 
+ * Given an integer, convert it to a roman numeral. <br>
+ * Input is guaranteed to be within the range from 1 to 3999. <br>
+ * @author Jay
+ *
+ */
 public class Ex12 {
 	
 	public static Map<Integer, String>romanMap = new HashMap<Integer, String> ();

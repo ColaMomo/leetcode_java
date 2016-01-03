@@ -1,5 +1,13 @@
 package com.kolamomo.leetcode;
 
+/**
+ * Remove Element
+ * 
+ * <p>Given an array and a value, remove all instances of that value in place and return the new length. <br>
+ * The order of elements can be changed. It doesn't matter what you leave beyond the new length. <br>
+ * @author Jay
+ *
+ */
 public class Ex27 {
 	public int removeElement(int[] nums, int val) {
 		int[] tempNums = new int[nums.length];

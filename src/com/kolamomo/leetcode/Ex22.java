@@ -7,6 +7,17 @@ import java.util.List;
 import java.util.Set;
 import java.util.Stack;
 
+/**
+ * Generate Parentheses
+ * 
+ * <p>Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.<br>
+ * For example, given n = 3, a solution set is:<br>
+ * "((()))", "(()())", "(())()", "()(())", "()()()"<br>
+ * 
+ * @note 字符串排列问题
+ * @author Jay
+ *
+ */
 public class Ex22 {
     public List<String> generateParenthesis(int n) {
     	char[] chArr = new char[n * 2];

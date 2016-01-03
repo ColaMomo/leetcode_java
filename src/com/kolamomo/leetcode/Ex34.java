@@ -2,6 +2,21 @@ package com.kolamomo.leetcode;
 
 import java.util.Arrays;
 
+/**
+ * Search for a Range
+ * 
+ * <p>Given a sorted array of integers, find the starting and ending position of a given target value.<br>
+ * Your algorithm's runtime complexity must be in the order of O(log n).<br>
+ * If the target is not found in the array, return [-1, -1].<br><br>
+ * 
+ * For example,<br>
+ * Given [5, 7, 7, 8, 8, 10] and target value 8,<br>
+ * return [3, 4].<br>
+ * 
+ * @note 二分查找
+ * @author Jay
+ *
+ */
 public class Ex34 {
     public int[] searchRange(int[] nums, int target) {
         int[] result = new int[] {-1, -1};

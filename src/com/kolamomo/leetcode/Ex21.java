@@ -1,14 +1,14 @@
 package com.kolamomo.leetcode;
 
+/**
+ * Merge Two Sorted Lists (合并有序链表)
+ * 
+ * <p>Merge two sorted linked lists and return it as a new list. <br>
+ * The new list should be made by splicing together the nodes of the first two lists.<br>
+ * @author Jay
+ *
+ */
 public class Ex21 {
-	/**
-	 * Definition for singly-linked list.
-	 * public class ListNode {
-	 *     int val;
-	 *     ListNode next;
-	 *     ListNode(int x) { val = x; }
-	 * }
-	 */
 	public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 		ListNode p1 = l1;
 		ListNode p2 = l2;

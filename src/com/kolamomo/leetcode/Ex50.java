@@ -1,5 +1,12 @@
 package com.kolamomo.leetcode;
 
+/**
+ * Pow(x, n) 
+ * 
+ * <p>Implement pow(x, n).
+ * @author Jay
+ *
+ */
 public class Ex50 {
     public double myPow(double x, int n) {
         if(n == 0) {

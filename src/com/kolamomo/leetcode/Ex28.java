@@ -1,31 +1,16 @@
 package com.kolamomo.leetcode;
 
-public class Ex28 {
-//暴力算法，超时
-//    public int strStr(String haystack, String needle) {
-//    	int index = 0;
-//    	if("".equals(needle)) {
-//    		return -1;
-//    	}
-//    	while(index < haystack.length()) {
-//    		if(haystack.charAt(index)==needle.charAt(0)) {
-//    			int tag = 0;
-//    			int i = 1;
-//    			for(; i < needle.length() && i < haystack.length() - index; i++) {
-//    				if(haystack.charAt(index+i) != needle.charAt(i)) {
-//    					tag = 1;
-//    					break;
-//    				}
-//    			}
-//    			if(tag == 0 && i == needle.length()) {
-//    				return index;
-//    			}
-//    		} 
-//    		index++;
-//    	}
-//        return -1;
-//    }
-    
+/**
+ * Implement strStr() (字符串子串问题)
+ * 
+ * <p>Implement strStr(). <br>
+ * Returns the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.<br>
+ * 
+ * @note 暴力法，kmp算法
+ * @author Jay
+ *
+ */
+public class Ex28 {    
 	//暴力算法
     public int strStr(String haystack, String needle) {
 		int index1 = 0;

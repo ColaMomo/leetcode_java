@@ -1,5 +1,15 @@
 package com.kolamomo.leetcode;
 
+/**
+ * Reverse Integer
+ * 
+ * <p>Reverse digits of an integer.<br>
+ * Example1: x = 123, return 321<br>
+ * Example2: x = -123, return -321<br>
+ *
+ * @author Jay
+ *
+ */
 public class Ex7 {
 	public int reverse(int x) {
 		int result = 0;

@@ -4,6 +4,25 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Combination Sum
+ * 
+ * <p>Given a set of candidate numbers (C) and a target number (T), 
+ * find all unique combinations in C where the candidate numbers sums to T.<br>
+ * The same repeated number may be chosen from C unlimited number of times.<br><br>
+ * 
+ * Note:<br>
+ * All numbers (including target) will be positive integers.<br>
+ * Elements in a combination (a1, a2, … , ak) must be in non-descending order. (ie, a1 ≤ a2 ≤ … ≤ ak).<br>
+ * The solution set must not contain duplicate combinations.<br><br>
+ * 
+ * For example, given candidate set 2,3,6,7 and target 7, <br>
+ * A solution set is: <br>
+ * [7] <br>
+ * [2, 2, 3] <br>
+ * @author Jay
+ *
+ */
 public class Ex39 {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
     	List<List<Integer>> result = new ArrayList<List<Integer>> ();

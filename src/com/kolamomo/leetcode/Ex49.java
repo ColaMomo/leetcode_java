@@ -12,19 +12,21 @@ import java.util.SortedSet;
 import java.util.TreeSet;
 
 /**
- * Given an array of strings, group anagrams together.
+ * Group Anagrams
  * 
- * For example, given: ["eat", "tea", "tan", "ate", "nat", "bat"], 
- * Return:
+ * <p>Given an array of strings, group anagrams together. <br><br>
  * 
- * [
- *   ["ate", "eat","tea"],
- *   ["nat","tan"],
- *   ["bat"]
- * ]
- * Note:
- * For the return value, each inner list's elements must follow the lexicographic order.
- * All inputs will be in lower-case.
+ * For example, given: ["eat", "tea", "tan", "ate", "nat", "bat"], <br>
+ * Return:<br>
+ * [<br>
+ *   ["ate", "eat","tea"],<br>
+ *   ["nat","tan"],<br>
+ *   ["bat"]<br>
+ * ]<br><br>
+ * 
+ * Note:<br>
+ * For the return value, each inner list's elements must follow the lexicographic order.<br>
+ * All inputs will be in lower-case.<br>
  * 
  * @author Jay
  *

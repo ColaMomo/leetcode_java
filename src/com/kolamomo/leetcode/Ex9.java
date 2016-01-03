@@ -1,5 +1,12 @@
 package com.kolamomo.leetcode;
 
+/**
+ * Palindrome Number (判断回文数字)
+ * 
+ * <p>Determine whether an integer is a palindrome. Do this without extra space.
+ * @author Jay
+ *
+ */
 public class Ex9 {
     public boolean isPalindrome(int x) {
     	if(x < 0) {

@@ -2,6 +2,19 @@ package com.kolamomo.leetcode;
 
 import java.util.Arrays;
 
+/**
+ * Next Permutation
+ * 
+ * <p>Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers.<br>
+ * If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order).<br>
+ * The replacement must be in-place, do not allocate extra memory.<br><br>
+ * Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column.<br>
+ * 1,2,3 → 1,3,2<br>
+ * 3,2,1 → 1,2,3<br>
+ * 1,1,5 → 1,5,1<br>
+ * @author Jay
+ *
+ */
 public class Ex31 {
     public void nextPermutation(int[] nums) {
     	int swap1 = -1;

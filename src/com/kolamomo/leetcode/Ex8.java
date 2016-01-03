@@ -1,5 +1,16 @@
 package com.kolamomo.leetcode;
 
+/**
+ * String to Integer (atoi) 
+ * 
+ * <p>Implement atoi to convert a string to an integer. <br>
+ * Hint: Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases. <br>
+ * Notes: It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front. <br>
+ * 
+ * @note 注意处理符号，空格，其他非法字符
+ * @author Jay
+ *
+ */
 public class Ex8 {
 	public int myAtoi(String str) {
 		int result = 0;

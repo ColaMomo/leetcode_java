@@ -1,9 +1,17 @@
 package com.kolamomo.leetcode;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
+/**
+ * 3Sum Closest
+ * 
+ * <p>Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target.<br> 
+ * Return the sum of the three integers. You may assume that each input would have exactly one solution.<br>
+ *     For example, given array S = {-1 2 1 -4}, and target = 1.<br>
+ *     The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).<br>
+ * @author Jay
+ *
+ */
 public class Ex16 {
 	public int threeSumClosest(int[] nums, int target) {
 		int min = Integer.MAX_VALUE;

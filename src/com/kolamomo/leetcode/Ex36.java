@@ -5,6 +5,16 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * Valid Sudoku
+ * 
+ * <p>Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules. <br>
+ * The Sudoku board could be partially filled, where empty cells are filled with the character '.'.<br>
+ * Note:<br>
+ * A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.<br>
+ * @author Jay
+ *
+ */
 public class Ex36 {
     public boolean isValidSudoku(char[][] board) {
     	for(int i = 0; i < 9; i++) {
