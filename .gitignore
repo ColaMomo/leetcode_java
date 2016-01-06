@@ -4,6 +4,7 @@ lib/
 target/
 deploy/
 bin/
+out/
 *.war
 *.zip
 *.tar
