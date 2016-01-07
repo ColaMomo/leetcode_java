@@ -15,23 +15,41 @@ package com.kolamomo.leetcode;
  */
 public class Ex80 {
     public int removeDuplicates(int[] nums) {
-        int count = 0;
-
-        int index = 0;
+        int i = 0;
+        int j = i + 1;
         int length = nums.length;
-        while(index < length) {
+        while(j < length) {
             int tag = 0;
-            for(int i = index+1; i < nums.length - 1; i++) {
-                if(nums[i] ==  nums[index]) {
+            while(j < length) {
+                if(nums[i] ==  nums[j]) {
                     if(tag == 0) {
+                        i++;
+                        nums[i] = nums[j];
                         tag = 1;
-                    } else {
-                        count++;
                     }
+                    j++;
+                } else {
+                    break;
                 }
             }
-
+            if(j < length) {
+                i++;
+                nums[i] = nums[j];
+                j++;
+            } else {
+                break;
+            }
         }
+        return i + 1;
+    }
 
+    public static void main(String[] args) {
+        Ex80 ex80 = new Ex80();
+        int[] nums = new int[]{1, 1,1 ,1,2,2,2,2,3};
+        int n = ex80.removeDuplicates(nums);
+        for(int i = 0; i < n; i++) {
+            System.out.print(nums[i] + " ");
+        }
+        System.out.println();
     }
 }
