@@ -30,14 +30,15 @@ import java.util.List;
 public class Ex90 {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
         List<List<Integer>> result = new ArrayList<List<Integer>>();
+        Arrays.sort(nums);
         for(int i = 0; i <= nums.length; i++) {
             Integer[] temp = new Integer[nums.length];
-            doGetSubsets(nums, 0, nums.length-1, 0, i, temp, result);
+            doGetSubsets(nums, 0, nums.length-1, 0, i, false, temp, result);
         }
         return result;
     }
 
-    private void doGetSubsets(int[] nums, int start, int end, int index, int length, Integer[] temp, List<List<Integer>> result) {
+    private void doGetSubsets(int[] nums, int start, int end, int index, int length, boolean addDuplicate, Integer[] temp, List<List<Integer>> result) {
         if(index == length) {
             List<Integer> list = new ArrayList<Integer>();
             for(int i = 0; i < index; i++) {
@@ -45,16 +46,16 @@ public class Ex90 {
             }
             result.add(list);
         } else {
-            for(int i = start; i <= end; i++) {
-                doGetSubsets(nums, start+1, end, index, length, temp, result);
-                if(i > 0 && nums[i] == nums[i-1]) {
-                    if(index > 0 && temp[index-1] == nums[i]) {
-                        temp[index] = nums[i];
-                        doGetSubsets(nums, start + 1, end, index + 1, length, temp, result);
+            if(start <= end) {
+                doGetSubsets(nums, start + 1, end, index, length, false, temp, result);
+                if(start > 0 && nums[start] == nums[start - 1]) {
+                    if(addDuplicate) {
+                        temp[index] = nums[start];
+                        doGetSubsets(nums, start + 1, end, index + 1, length, true, temp, result);
                     }
                 } else {
-                    temp[index] = nums[i];
-                    doGetSubsets(nums, start + 1, end, index + 1, length, temp, result);
+                    temp[index] = nums[start];
+                    doGetSubsets(nums, start + 1, end, index + 1, length, true, temp, result);
                 }
             }
         }
@@ -62,7 +63,7 @@ public class Ex90 {
 
     public static void main(String[] args) {
         Ex90 ex90 = new Ex90();
-        List<List<Integer>> result = ex90.subsetsWithDup(new int[]{1, 2, 3});
+        List<List<Integer>> result = ex90.subsetsWithDup(new int[]{1, 2, 2, 2});
         ListUtils.printNestList(result);
     }
 }
